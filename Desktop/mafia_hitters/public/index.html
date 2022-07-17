@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAFIA HITTERS</title>
+  <link rel="stylesheet" href="/src/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Italiana&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="Winwheel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</head>
+  <body>
+      <!-- HEADER SECTION -->
+      
+      <div class="header">
+        <div class="header_title">
+          <div class="logo"><img src="./images/testests.gif" alt=""/></div>
+          <!-- <h1>MAFIA HITTERS</h1> -->
+        </div>
+        <div class="logoo">
+          <img src="./images/logomafia.png" alt=""/>
+        </div>
+        <div class="socials">
+          <a href="https://www.discord.com" target="_blank"><img src="images/discord.png" alt="facebook"/></a>
+          <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" alt="instagram"/></a>
+          <a href="https://opensea.io" target="_blank"><img src="images/opensea.png" alt="youtube"/></a>
+        </div>
+      </div>
+      
+      <!-- INFO SECTION -->
+      
+      <div class="info">
+        <h2>The mafia family will be taking 5000 Hits, spin to place a hit.</h2>
+        <br/>
+        <h4>YOU HAVE 72 HOURS</h4>
+        <br/>
+        <h4> SPIN TO PLACE HIT </h4>
+        <br/>
+        <br/>
+      </div>
+
+      <!-- WALLET CONNECT -->
+      <div id="root"></div>
+      
+      <!-- SPINNING WHEEL SECTION -->
+      
+      <div class="wheel_table">
+        <div class="wlcount">
+          <h1>1952</h1>
+          <h1>/5000</h1>
+        </div>
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td>
+              <div class="power_controls">
+                <br />
+                <br />
+                <table class="power" cellpadding="10" cellspacing="0">
+                  <tr>
+                    <th align="center">Power</th>
+                  </tr>
+                  <tr>
+                    <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High</td>
+                  </tr>
+                  <tr>
+                    <td align="center" id="pw2" onClick="powerSelected(2);">Med</td>
+                  </tr>
+                  <tr>
+                    <td align="center" id="pw1" onClick="powerSelected(1);">Low</td>
+                  </tr>
+                </table>
+                <br />
+                <img id="spin_button" src="./images/spin_on.png" alt="Spin" onClick="startSpin();" />
+                <br />
+      
+              </div>
+            </td>
+            <td width="438" height="542" class="the_wheel" align="center" valign="center">
+              <canvas id="canvas" width="434" height="434">
+                <p style="color: white" align="center">Sorry, your browser doesn't support canvas. Please try another.
+                </p>
+              </canvas>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- SPIN RESPONSES -->
+      
+      <div class="spin_response">
+        <div class="spin_prize">
+          <p>
+            01 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem earum vitae sint suscipit error laboriosam,
+            optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+            ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+            Consequuntur quisquam nulla rem facere nostrum,
+            tempora cumque velit quas dolore voluptatem.
+            Voluptatem architecto doloribus sunt sint adipisci.
+          </p>
+          <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        </div>
+        <div class="spin_prize">
+          <p>
+            02 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem earum vitae sint suscipit error laboriosam,
+            optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+            ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+            Consequuntur quisquam nulla rem facere nostrum,
+            tempora cumque velit quas dolore voluptatem.
+            Voluptatem architecto doloribus sunt sint adipisci.
+          </p>
+          <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        </div>
+        <div class="spin_prize">
+          <p>
+            03 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem earum vitae sint suscipit error laboriosam,
+            optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+            ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+            Consequuntur quisquam nulla rem facere nostrum,
+            tempora cumque velit quas dolore voluptatem.
+            Voluptatem architecto doloribus sunt sint adipisci.
+          </p>
+          <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        </div>
+        <div class="spin_prize">
+          <p>
+            04 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem earum vitae sint suscipit error laboriosam,
+            optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+            ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+            Consequuntur quisquam nulla rem facere nostrum,
+            tempora cumque velit quas dolore voluptatem.
+            Voluptatem architecto doloribus sunt sint adipisci.
+          </p>
+          <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        </div>
+        <div class="spin_prize">
+          <p>
+            05 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem earum vitae sint suscipit error laboriosam,
+            optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+            ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+            Consequuntur quisquam nulla rem facere nostrum,
+            tempora cumque velit quas dolore voluptatem.
+            Voluptatem architecto doloribus sunt sint adipisci.
+          </p>
+          <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        </div>
+        <div class="spin_prize">
+          <p>
+            06 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem earum vitae sint suscipit error laboriosam,
+            optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+            ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+            Consequuntur quisquam nulla rem facere nostrum,
+            tempora cumque velit quas dolore voluptatem.
+            Voluptatem architecto doloribus sunt sint adipisci.
+          </p>
+          <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        </div>
+        <div class="spin_prize">
+          <p>
+            07 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem earum vitae sint suscipit error laboriosam,
+            optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+            ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+            Consequuntur quisquam nulla rem facere nostrum,
+            tempora cumque velit quas dolore voluptatem.
+            Voluptatem architecto doloribus sunt sint adipisci.
+          </p>
+          <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        </div>
+        <div class="spin_prize">
+          <p>
+            08 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem earum vitae sint suscipit error laboriosam,
+            optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+            ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+            Consequuntur quisquam nulla rem facere nostrum,
+            tempora cumque velit quas dolore voluptatem.
+            Voluptatem architecto doloribus sunt sint adipisci.
+          </p>
+          <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        </div>
+        <div class="spin_prize">
+          <p>
+            09 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem earum vitae sint suscipit error laboriosam,
+            optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+            ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+            Consequuntur quisquam nulla rem facere nostrum,
+            tempora cumque velit quas dolore voluptatem.
+            Voluptatem architecto doloribus sunt sint adipisci.
+          </p>
+          <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        </div>
+        <div class="spin_prize">
+          <p>
+            10 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem earum vitae sint suscipit error laboriosam,
+            optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+            ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+            Consequuntur quisquam nulla rem facere nostrum,
+            tempora cumque velit quas dolore voluptatem.
+            Voluptatem architecto doloribus sunt sint adipisci.
+          </p>
+          <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        </div>
+      </div>
+      <div class="star_prize">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Exercitationem earum vitae sint suscipit error laboriosam,
+          optio hic velit nobis. Cum fugit earum dolores optio voluptatem,
+          ratione eos nostrum placeat dignissimos, beatae perspiciatis!
+          Consequuntur quisquam nulla rem facere nostrum,
+          tempora cumque velit quas dolore voluptatem.
+          Voluptatem architecto doloribus sunt sint adipisci.
+        </p>
+        <a href="#" onClick="resetWheel(); return false;">Reset Spin</a>
+        <br>
+        <p id="code" style="color: green; font-size: 24px; font-weight: bold;"></p>
+      </div>
+
+
+      <script src="wheel.js"></script>
+
+  </body>
+</html>
