@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The aim of this project was to help me learn how to use react components and how to access clarafai API data to detect faces in uploaded images
+
 ## Available Scripts
 
 In the project directory, you can run:
